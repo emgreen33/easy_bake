@@ -15,7 +15,7 @@ gpio.output(38, 1)
 while True:
   gpio.output(40, True)
   gpio.output(38, False)
-  time.sleep(250)
+  time.sleep(4)
   gpio.output(40, 0)
   gpio.output(38, 1)
 
