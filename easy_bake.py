@@ -1,4 +1,5 @@
 import RPi.GPIO as gpio
+import time
 
 #use board numbering on the pi
 
@@ -14,7 +15,7 @@ gpio.output(38, 1)
 while True:
   gpio.output(40, True)
   gpio.output(38, False)
-  sleep(250)
+  time.sleep(250)
   gpio.output(40, 0)
   gpio.output(38, 1)
 
