@@ -6,15 +6,15 @@ switch = 10
 
 gpio.setup(switch, gpio.OUT, initial=False)
 
-def on:
+def switch_on():
   gpio.output(switch, True)
   print "Oven switched ON at " + str(datetime.now())
 
-def off:
+def switch_off():
   gpio.output(switch, False)
   print "Oven switched OFF at " + str(datetime.now())
 
-def status:
+def status():
   return gpio.input(switch)
 
 
