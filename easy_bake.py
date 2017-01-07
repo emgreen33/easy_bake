@@ -4,18 +4,24 @@ import time
 #use board numbering on the pi
 
 gpio.setmode(gpio.BOARD)
+output_pins = [40, 38]
 
-gpio.setup(40, gpio.OUT)
-gpio.setup(38, gpio.OUT)
+gpio.setup(output_pins, gpio.OUT)
 
 #true and 1 are the same
-gpio.output(40, True)
-gpio.output(38, 1)
+# gpio.output(40, True)
+# gpio.output(38, 1)
 
 while True:
-  gpio.output(40, True)
-  gpio.output(38, False)
-  time.sleep(4)
-  gpio.output(40, 0)
-  gpio.output(38, 1)
+  gpio.output(output_pins, (True, False))
+  # gpio.output(40, True)
+  # gpio.output(38, False)
+  time.sleep(1)
+  # gpio.output(40, False)
+  # gpio.output(38, True)
+  gpio.output(output_pins, (False, True))
+
+
+gpio.cleanup()
+
 
