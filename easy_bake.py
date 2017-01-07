@@ -5,7 +5,7 @@ import RPi.GPIO as gpio
 gpio.setmode(gpio.BOARD)
 
 gpio.setup(40, gpio.OUT)
-gpio.setup(38, gpio.IN)
+gpio.setup(38, gpio.OUT)
 
 #true and 1 are the same
 gpio.output(40, True)
