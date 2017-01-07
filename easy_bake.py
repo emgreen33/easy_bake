@@ -20,6 +20,7 @@ while True:
   # gpio.output(40, False)
   # gpio.output(38, True)
   gpio.output(output_pins, (False, True))
+  time.sleep(1)
 
 
 gpio.cleanup()
