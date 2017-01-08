@@ -4,9 +4,11 @@ import time
 import controller
 
 gpio.setmode(gpio.BOARD)
+# switch_pins = [10, 40, 38]
 switch = 10
 
 gpio.setup(switch, gpio.OUT, initial=False)
+# gpio.setup(switch_pins, gpio.OUT, initial=False)
 
 def switch_on():
   gpio.output(switch, True)
@@ -26,10 +28,8 @@ while True:
   time.sleep(3)
   switch_off()
   status()
+  time.sleep(3)
   break
 
 
 gpio.cleanup()
-
-
-
