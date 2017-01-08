@@ -33,7 +33,7 @@ import time
 #use board numbering on the pi
 
 gpio.setmode(gpio.BOARD)
-output_pins = [40, 38]
+output_pins = [40, 38, 36]
 
 gpio.setup(output_pins, gpio.OUT)
 
