@@ -1,5 +1,6 @@
 import RPi.GPIO as gpio
 from datetime import datetime
+import time
 import controller
 
 gpio.setmode(gpio.BOARD)
