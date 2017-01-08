@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Handle POST requests with Flask</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>POST request with Flask</h1>
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('cookie_submit') }}">
+                  <label for="yourname">Please enter your name:</label>
+                  <input type="text" name="yourname" /><br />
+                  <label for="yournumber">Please enter your phone number:</label>
+                  <input type="text" name="yournumber" /><br />
+                  <input type="submit" />
+                </form>
+            </div>
+            <div class="title">
+                <h1>Flask code</h1>
+            </div>
+                <code><pre>
+
+<!-- @app.route('/')
+def cookie_form():
+    return render_template('form_submit.html') -->
+                </pre></code>
+            </div>
+        </div>
+    </body>
+</html>

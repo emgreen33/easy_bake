@@ -10,12 +10,15 @@ def switch_on():
   gpio.output(switch, True)
   print "Oven switched ON at " + str(datetime.now())
 
+
 def switch_off():
   gpio.output(switch, False)
   print "Oven switched OFF at " + str(datetime.now())
+  gpio.cleanup()
 
 def status():
   return gpio.input(switch)
+
 
 
 
