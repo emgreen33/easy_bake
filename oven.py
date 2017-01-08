@@ -22,15 +22,13 @@ def switch_off():
 def status():
   return gpio.input(switch)
 
-while True:
-  switch_on()
-  status()
-  time.sleep(3)
-  switch_off()
-  status()
-  time.sleep(3)
-  gpio.cleanup()
-  break
 
+switch_on()
+status()
+time.sleep(3)
+switch_off()
+status()
+
+# gpio.cleanup()
 
 
