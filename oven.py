@@ -29,7 +29,7 @@ while True:
   switch_off()
   status()
   time.sleep(3)
-  gpio.out(switch, 0)
+  gpio.output(switch, 0)
   break
 
 
