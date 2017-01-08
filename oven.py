@@ -27,6 +27,7 @@ while True:
   switch_off()
   status()
   time.sleep(2)
+  break
 
 
 gpio.cleanup()

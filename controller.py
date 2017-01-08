@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 import time
 
-
 if __name__ == '__main__':
     app.run()
 
@@ -19,18 +18,5 @@ def cookie_submit():
     'number' : request.form['yournumber'],
     'status' : "on"
     }
-    # name=request.form['yourname']
-    # number=request.form['yournumber']
     return render_template('form_action.html', **page_data)
-
-
-# while True:
-#   if cookie_submit():
-#     print oven.status()
-#     oven.switch_on()
-#     print oven.status()
-#     time.sleep(4)
-#     oven.switch_off()
-#     print oven.status()
-#     time.sleep(4)
 
