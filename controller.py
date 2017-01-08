@@ -14,9 +14,15 @@ def cookie_form():
 
 @app.route('/cookie_submit/', methods=['POST'])
 def cookie_submit():
-    name=request.form['yourname']
-    number=request.form['yournumber']
-    return render_template('form_action.html', name=name, number=number)
+    page_data = {
+    'name' : request.form['yourname'],
+    'number' : request.form['yournumber'],
+    'status' : "on"
+    }
+    # name=request.form['yourname']
+    # number=request.form['yournumber']
+    return render_template('form_action.html', **page_data)
+
 
 while True:
   if cookie_submit():

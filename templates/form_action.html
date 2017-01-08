@@ -9,27 +9,20 @@
                 <h1>POST request with Flask</h1>
             </div>
             <div id="content">
-                Hello <strong>{{name}}</strong> ({{number}})!
+                Hello <strong>{{name}}</strong><br>
+                mobile: ({{number}})!
             </div>
             <div class="title">
                 <h1>Flask code</h1>
             <div id="status">
-                <p>The easy bake oven is currently
-                    {% if oven.state == true %}
-                    on (<a href="/">turn off</a>)
-                    {% else %}
-                    off (<a href="/">turn on</a>)
-                    {% endif %}
+                <p>The easy bake oven
+                {% if {status} == "on" %}
+      is currently on (<a href="/">turn off</a>)
+                {% endif %}
                 </p>
             </div>
             </div>
                 <code><pre>
-
-<!-- @app.route('/cookies/', methods=['POST'])
-def cookie_submit():
-    name=request.form['yourname']
-    number=request.form['yournumber']
-    return render_template('form_action.html', name=name, number=number) -->
                 </pre></code>
             </div>
         </div>
