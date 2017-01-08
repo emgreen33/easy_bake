@@ -33,7 +33,7 @@ import time
 #use board numbering on the pi
 
 gpio.setmode(gpio.BOARD)
-output_pins = [40, 38, 23]
+output_pins = [40, 38, 10]
 
 gpio.setup(output_pins, gpio.OUT)
 
@@ -45,11 +45,11 @@ while True:
   gpio.output(output_pins, (True, False, False))
   # gpio.output(40, True)
   # gpio.output(38, False)
-  time.sleep(1)
+  time.sleep(3)
   # gpio.output(40, False)
   # gpio.output(38, True)
   gpio.output(output_pins, (False, True, True))
-  time.sleep(1)
+  time.sleep(3)
 
 
 gpio.cleanup()
