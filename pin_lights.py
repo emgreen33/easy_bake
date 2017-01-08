@@ -42,7 +42,7 @@ gpio.setup(output_pins, gpio.OUT)
 # gpio.output(38, 1)
 
 while True:
-  gpio.output(output_pins, (True, False))
+  gpio.output(output_pins, (True, False, True))
   # gpio.output(40, True)
   # gpio.output(38, False)
   time.sleep(1)
