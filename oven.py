@@ -27,6 +27,8 @@ while True:
   switch_off()
   status()
   time.sleep(2)
+  switch_off()
+
   break
 
 
