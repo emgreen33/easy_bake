@@ -1,4 +1,4 @@
-import oven
+# import oven
 from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 
@@ -24,13 +24,13 @@ def cookie_submit():
     return render_template('form_action.html', **page_data)
 
 
-while True:
-  if cookie_submit():
-    print oven.status()
-    oven.switch_on()
-    print oven.status()
-    time.sleep(4)
-    oven.switch_off()
-    print oven.status()
-    time.sleep(4)
+# while True:
+#   if cookie_submit():
+#     print oven.status()
+#     oven.switch_on()
+#     print oven.status()
+#     time.sleep(4)
+#     oven.switch_off()
+#     print oven.status()
+#     time.sleep(4)
 

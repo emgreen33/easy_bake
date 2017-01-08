@@ -1,5 +1,6 @@
 import RPi.GPIO as gpio
 from datetime import datetime
+import controller
 
 gpio.setmode(gpio.BOARD)
 switch = 10
@@ -18,7 +19,6 @@ def switch_off():
 
 def status():
   return gpio.input(switch)
-
 
 
 
