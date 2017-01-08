@@ -24,10 +24,10 @@ def status():
 
 
 switch_on()
-status()
+print status()
 time.sleep(3)
 switch_off()
-status()
+print status()
 
 # gpio.cleanup()
 
