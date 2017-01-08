@@ -20,6 +20,16 @@ def switch_off():
 def status():
   return gpio.input(switch)
 
+while True:
+  switch_on()
+  status()
+  time.sleep(2)
+  switch_off()
+  status()
+  time.sleep(2)
+
+
+gpio.cleanup()
 
 
 
