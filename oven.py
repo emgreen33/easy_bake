@@ -23,7 +23,7 @@ def status():
 while True:
   switch_on()
   status()
-  time.sleep(2)
+  time.sleep(3)
   switch_off()
   status()
   break
