@@ -10,7 +10,7 @@ def hello():
       'title' : 'HELLO!',
       'time': timeString
       }
-   return render_template('form_submit.html', **templateData)
+   return render_template('main.html', **templateData)
 
 
 # @app.route('/')
