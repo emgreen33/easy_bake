@@ -1,11 +1,11 @@
-# import oven
+
 from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 
 import time
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
 
 @app.route('/')
 def cookie_form():
@@ -20,3 +20,5 @@ def cookie_submit():
     }
     return render_template('form_action.html', **page_data)
 
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', port=80, debug=True)
